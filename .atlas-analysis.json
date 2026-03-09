@@ -1,0 +1,157 @@
+{
+  "projectType": "cli-tool",
+  "projectName": "Hiero CLI",
+  "projectDescription": "Command-line interface for managing Hedera network environments, accounts, tokens, and smart contracts",
+  "theme": "aspen",
+  "primaryColor": "#aebd57",
+  "lightColor": "#26272c",
+  "darkColor": "#dbdbdd",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "installation",
+              "quickstart",
+              "configuration"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/architecture",
+              "concepts/plugin-system",
+              "concepts/state-management",
+              "concepts/networks",
+              "concepts/key-management"
+            ]
+          },
+          {
+            "group": "Commands",
+            "pages": [
+              "commands/overview",
+              "commands/account",
+              "commands/token",
+              "commands/nft",
+              "commands/hbar",
+              "commands/network",
+              "commands/contract",
+              "commands/topic",
+              "commands/credentials",
+              "commands/config",
+              "commands/plugin-management"
+            ]
+          },
+          {
+            "group": "Advanced Usage",
+            "pages": [
+              "advanced/global-flags",
+              "advanced/script-mode",
+              "advanced/output-formats",
+              "advanced/local-network",
+              "advanced/ci-cd"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Plugin Development",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "plugins/introduction",
+              "plugins/creating-plugins",
+              "plugins/plugin-structure"
+            ]
+          },
+          {
+            "group": "Development Guide",
+            "pages": [
+              "plugins/command-handlers",
+              "plugins/input-validation",
+              "plugins/output-schemas",
+              "plugins/state-management",
+              "plugins/testing"
+            ]
+          },
+          {
+            "group": "Distribution",
+            "pages": [
+              "plugins/packaging",
+              "plugins/publishing"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Core API",
+            "pages": [
+              "api/overview",
+              "api/account-service",
+              "api/token-service",
+              "api/contract-service",
+              "api/network-service",
+              "api/state-service",
+              "api/kms-service"
+            ]
+          },
+          {
+            "group": "Types & Schemas",
+            "pages": [
+              "api/types",
+              "api/errors"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Plugin-based architecture for extensibility",
+    "Account creation and management with multiple key types",
+    "Fungible and non-fungible token operations",
+    "Smart contract compilation, deployment, and verification",
+    "Multi-network support (mainnet, testnet, previewnet, localnet)",
+    "Encrypted key storage with AES-256-GCM",
+    "Topic-based messaging and consensus",
+    "Interactive and script modes for automation",
+    "JSON and human-readable output formats",
+    "Mirror node integration for network queries"
+  ],
+  "publicApiSurface": [
+    "hcli account create",
+    "hcli account balance",
+    "hcli account list",
+    "hcli account import",
+    "hcli account delete",
+    "hcli token create-ft",
+    "hcli token create-nft",
+    "hcli token associate",
+    "hcli token transfer",
+    "hcli token mint-ft",
+    "hcli token mint-nft",
+    "hcli hbar transfer",
+    "hcli network use",
+    "hcli network set-operator",
+    "hcli contract create",
+    "hcli contract delete",
+    "hcli contract-erc20 name",
+    "hcli contract-erc20 balance",
+    "hcli contract-erc20 transfer",
+    "hcli contract-erc721 transfer",
+    "hcli topic create",
+    "hcli topic submit-message",
+    "hcli config set",
+    "hcli config get",
+    "hcli plugin-management add",
+    "hcli plugin-management remove"
+  ]
+}
